@@ -2,7 +2,9 @@
    overflow-x: hidden;
  }
 
-nav {
+/**NAV**/
+
+nav, .hero-background {
     width: 100%;
 }
 
@@ -25,13 +27,42 @@ nav {
 .nav:before,
 .nav:after,
 .sign-in:before,
-.sign-in:after {
+.sign-in:after{
    content: " ";
    display: table;
  }
 
-.nav:after,
-.sign-in:after,
-.how:after {
+.nav:after{
    clear: both;
  }
+
+.logo img {
+    width: 50%;
+}
+
+/**Hero**/
+ .hero-background {
+    background: url("/images/hero1.jpg");
+    background-size: cover;
+     height: 550px;
+}
+
+.hero-background h1, .hero-background h2, button {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-blur {
+  width: 500px;
+  height: 300px;
+  background-color: #FFF;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);
+}
