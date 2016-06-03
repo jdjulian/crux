@@ -1,4 +1,4 @@
- html, body{
+ html, body {
     overflow-x: hidden;
     font-family: "Raleway", Georgia, sans-serif;
  }
@@ -7,13 +7,14 @@
 
 nav {
     width: 100%;
-    height: 30px;
-    
+    height: 60px;
+    overflow: auto;
 }
 
 .nav, .container {
     width: 80%;
     margin: 0 auto;
+    overflow: auto;
 }
 
 .logo {
@@ -60,7 +61,7 @@ nav {
     height: 550px;
 }
 
-.hero h1, .hero h2 {
+h1, h2 {
     display: block;
     text-align: center;
 }
@@ -68,14 +69,14 @@ nav {
 .hero h1 {
     color: #4D8387;
     font-size: 48px;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
-.hero h2 {
+h2, .sign-in a, p {
     color: #39423A;
 }
 
-button {
+.hero button {
     width: 150px;
     height: 40px;
     border-radius: 5px;
@@ -90,26 +91,31 @@ button {
     font-size: 16px;
 }
 
-/**.hero-blur {
+.hero-blur {
     display: block;
     margin: 0 auto;
-    width: 500px;
-    height: 300px;
-    background-color: #FFF;
-    -webkit-filter: blur(30px);
-    -moz-filter: blur(30px);
-    -o-filter: blur(30px);
-    -ms-filter: blur(30px);
-    filter: blur(30px);
-}**/
+    width: 800px;
+    height: 400px;
+    content: ' ';
+    background-color: white;
+    opacity: 0.8;
+}
+
+.hero-content {
+    z-index: 99;
+    opacity: 1;
+}
 
 /**TESTIMONIAL**/
 .testimonial {
     background-color: #D9B23F;
-    color: floralwhite;
     width: 100%;
     height: 350px;
-    clear: both'
+    clear: both;
+}
+
+.testimonial h2, .testimonial p, .testimonial a{
+    color: floralwhite;
 }
 
 .testimonial h2, .which h2 {
@@ -131,18 +137,62 @@ button {
     width: 15%;
 }
 
+.testimonial img {
+    border-radius: 5px;
+}
+
 testimonial-quote {
     width: 85%;
 }
 
 /**WHICH**/
+.which {
+    width: 100%;
+}
 
-.designer, .developer {
-    width: 40%;
+.which container {
+    height: auto;
+    overflow: auto;
+    clear: both;
+}
+
+.designer, .business {
+    width: 50%;
     float: left;
     display: block;
     margin: 0 auto;
 }
 
-.developer {
+.designer button, .business button {
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #76F1F2;
+    border: none;
+    color: #39423A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/**FOOTER**/
+.footer {
+    background-color: #D9B23F;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.footer p {
+    color: floralwhite;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+
+
     
