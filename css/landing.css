@@ -1,17 +1,17 @@
  html, body{
-   overflow-x: hidden;
-     font-family: "Raleway", Georgia, sans-serif;
+    overflow-x: hidden;
+    font-family: "Raleway", Georgia, sans-serif;
  }
 
 /**NAV**/
 
-nav, .hero-background {
+nav {
     width: 100%;
-    height: 40px;
+    height: 30px;
     
 }
 
-.nav {
+.nav, .container {
     width: 80%;
     margin: 0 auto;
 }
@@ -54,18 +54,25 @@ nav, .hero-background {
 }
 
 /**Hero**/
- .hero-background {
+ .hero {
     background: url("/images/hero1.jpg");
     background-size: cover;
-     height: 550px;
+    height: 550px;
 }
 
-.hero-background h1, .hero-background h2 {
+.hero h1, .hero h2 {
+    display: block;
     text-align: center;
 }
 
-.hero-background h1 {
-    padding-top: 80px;
+.hero h1 {
+    color: #4D8387;
+    font-size: 48px;
+    padding-top: 120px;
+}
+
+.hero h2 {
+    color: #39423A;
 }
 
 button {
@@ -75,15 +82,67 @@ button {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
+    background-color: #76F1F2;
+    border: none;
+    color: #39423A;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.hero {
-  width: 500px;
-  height: 300px;
-  background-color: #FFF;
+/**.hero-blur {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+    background-color: #FFF;
     -webkit-filter: blur(30px);
     -moz-filter: blur(30px);
     -o-filter: blur(30px);
     -ms-filter: blur(30px);
     filter: blur(30px);
+}**/
+
+/**TESTIMONIAL**/
+.testimonial {
+    background-color: #D9B23F;
+    color: floralwhite;
+    width: 100%;
+    height: 350px;
+    clear: both'
 }
+
+.testimonial h2, .which h2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.testimonial container {
+    clear: both;
+    width: 80%;
+}
+
+.testimonial-image {
+    float: left;
+}
+
+.testimonial-image {
+    width: 15%;
+}
+
+testimonial-quote {
+    width: 85%;
+}
+
+/**WHICH**/
+
+.designer, .developer {
+    width: 40%;
+    float: left;
+    display: block;
+    margin: 0 auto;
+}
+
+.developer {
+    
