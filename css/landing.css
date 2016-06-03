@@ -56,7 +56,7 @@ nav {
 
 /**Hero**/
  .hero {
-    background: url("/images/hero1.jpg");
+    background: url("../images/hero1.jpg");
     background-size: cover;
     height: 550px;
 }
@@ -169,7 +169,7 @@ testimonial-quote {
     border-radius: 5px;
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 100px;
     background-color: #76F1F2;
     border: none;
@@ -179,18 +179,31 @@ testimonial-quote {
     font-size: 16px;
 }
 
+.which p {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+
+.which a {
+    text-decoration: none;
+    color: #39423A;
+    font-weight: bold;
+    font-weight: 600;
+}
+
 /**FOOTER**/
 .footer {
     background-color: #D9B23F;
     width: 100%;
-    height: 50px;
+    height: 60px;
     text-align: center;
 }
 
 .footer p {
     color: floralwhite;
     font-size: 14px;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 
